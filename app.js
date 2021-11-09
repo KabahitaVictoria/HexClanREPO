@@ -1,16 +1,21 @@
 const express = require('express');
+var path = require('path')
 const bodyParser = require('body-parser')
 const app = express();
 const studentLogin = require('./backend/routes/loginStudent')
 const connectDB = require('./backend/db/connect')
 require('dotenv').config()
 
+const port = process.env.PORT || 5000
 
+app.set('public', path.join(__dirname, 'public'))
 app.use(express.json());
 app.use(bodyParser.json())
-app.use('/student', studentLogin)
-
-const port = process.env.PORT || 5000
+app.use(express.static(path.resolve(__dirname, 'public')))
+app.get('/', (req,res)=>{
+  res.sendFile(__dirname + '/backend/public/login.html')
+})
+app.use('/', studentLogin)
 
 const start = async () =>{
   try {
