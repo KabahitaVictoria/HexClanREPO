@@ -11,15 +11,16 @@
 <body>
     <header>CodeQueen E-learning System</header>
     <div class="form">
-        <form action="/login" method="post">
+        <form action="/" method="post" target="_blank" onclick="">
             <img src="Logo.jpg" alt="CodeQueen">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <label class="checkbox"><input type="checkbox" value="IsRememberMe" id="rememberMe" >Remember me</label>
-                <button type="submit">Login</button>
+                <input type="text" placeholder="Username" name="username" id="username" required>
+                <input type="password" placeholder="Password" name="password" id="password" required>
+                <!-- <label class="checkbox"><input type="checkbox" value="IsRememberMe" id="rememberMe" >Remember me</label> -->
+                <button type="submit" value="submit">Login</button>
                 <p>Not a student? Login as <a href="#">Admin</a></p>
                 <p>Don't have an account yet? <a href="#">Sign up</a></p>
         </form>
     </div>
+    <script src="../controllers/loginStudent.js"></script>
 </body>
 </html>

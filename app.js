@@ -8,14 +8,17 @@ require('dotenv').config()
 
 const port = process.env.PORT || 5000
 
+
 app.set('public', path.join(__dirname, 'public'))
-app.use(express.json());
-app.use(bodyParser.json())
-app.use(express.static(path.resolve(__dirname, 'public')))
-app.get('/', (req,res)=>{
-  res.sendFile(__dirname + '/backend/public/login.html')
-})
+app.use(express.json())
+app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', studentLogin)
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
+
+app.get('/', (req,res)=>{
+  res.sendFile(path.join(__dirname, 'backend/public', 'login.html'))
+})
 
 const start = async () =>{
   try {

@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/login', (req,res)=>{
-    res.sendFile('/Users/Admin/HexClanBackend/backend/public/login.html')
-})
-
 let {
-    saveLogin
+    SaveLogin
 } = require('../controllers/loginStudent')
 
-router.route('/login').post(saveLogin)
+router.post('/login',SaveLogin)
+
+// router.post('/', async(req,res)=>{
+//     console.log(req.body);
+//     res.json({msg: 'success'})
+// })
 
 module.exports = router;
