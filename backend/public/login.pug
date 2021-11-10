@@ -1,0 +1,31 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Login or Sign up
+  link(rel='icon' href='icon.jpg' type='image/x-icon')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  link(rel='stylesheet' href='./css/login.css')
+h1 Login
+.form
+  form#form(action='/login' method='post' target='_blank' onclick='')
+    img(src='Logo.jpg' alt='CodeQueen')
+    input#username(type='text' placeholder='Username' name='username' required='')
+    br
+    input#password(type='password' placeholder='Password' name='password' required='')
+    br
+    // <label class="checkbox"><input type="checkbox" value="IsRememberMe" id="rememberMe" >Remember me</label>
+    button(type='submit' value='submit' onclick=form.reset()) Login
+    p
+      | Not a student? Login as 
+      a(href='#') Admin
+.container-form
+  p
+    | Don&apos;t have an account yet? 
+    a(href='#') Sign up
+script(src='js/loginhtml.js')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+

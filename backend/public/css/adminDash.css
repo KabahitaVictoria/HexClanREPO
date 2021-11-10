@@ -1,0 +1,127 @@
+
+
+#admin{
+    background-color: rgba(220, 220, 220, 0.308);
+    margin: 0 auto;
+    width: 70%;
+}
+
+#admin:hover{
+    background-color: rgba(220, 220, 220, 0.582);
+}
+
+h1,h2{
+    color: rgba(255, 166, 0, 0.897);
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#h1 {
+    font-size: 50px;
+}
+
+input[type=submit]{
+    width: 20%;
+    height: 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 4px;
+    margin-left: 15px;
+    background: orange;
+    font-size: 12px;
+    font-weight: bolder;
+	border: none;
+    transform: 0.5s ease;
+}
+
+.upload{
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.219);
+    margin: 0 auto;
+    width: 40%;
+    padding-bottom: 5px;
+}
+
+.upload:hover{
+    background-color: rgba(220, 220, 220, 0.527);
+}
+
+/* .dash{
+    display: flex;
+    align-content: center;
+} */
+
+.url, .text{
+    border: none;
+    border: 1px solid rgba(255, 166, 0, 0.651);
+    border-radius: 5px;
+    height: 20px;
+    width: 50%;
+}
+
+input::placeholder{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+label, .successMessage{
+    color: rgba(0, 0, 0, 0.685);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.successMessage{
+    padding-top: 5px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    /* position: relative; */
+    /* z-index: 1; */
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 166, 0, 0.521);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidenav a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(15, 15, 15, 0.788);
+    font-weight: bolder;
+    display: block;
+    transition: 0.3s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidenav a:hover{
+    color: rgba(48, 47, 47, 0.705);
+}
+
+.sidenav .closebtn {
+    position: relative;
+    top: 0;
+    left: 30px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#dash {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#body{
+    flex-grow: 2;
+}
