@@ -5,7 +5,7 @@ let {
     SaveLogin
 } = require('../controllers/loginStudent')
 
-router.post('/',SaveLogin)
+router.post('/login',SaveLogin)
 
 // router.post('/', async(req,res)=>{
 //     console.log(req.body);
