@@ -1,0 +1,195 @@
+body{
+    background: rgba(255, 189, 66, 0.6);
+}
+.page{
+    width: 900px;
+    border-radius: 20px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(../img/Logo.jpg);
+    background-size: 900px 600px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 8px 0px black;
+    margin-top: 50px;
+}
+.head{
+    width: 850px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgba(255, 189, 66, 0.8);
+    display: flex;
+    justify-content:center;
+    margin: 0 auto;
+    padding-right: 5px;
+    padding-bottom: 8px;
+}
+
+h3{
+    font-stretch: extra-expanded;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    padding-top: 3px;
+}
+.banner{
+    width: 850px;
+    height: 155px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    border-bottom:none ;
+}
+h2{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: orange;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    color: wheat;
+}
+
+.button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: orange;
+    margin-left: 5px;
+    margin-right: 5px;
+}   
+
+.button:hover{
+    background: rgb(136, 136, 136);}
+
+.btn-1,.btn-2,.contact{
+    padding-top: 10px;
+}
+.btn-2{
+    font-size: 15px ;
+
+}
+.about{
+    width: 850px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    color: rgb(255, 232, 158);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.links{
+    width: 850px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    border-top: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.about p{
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    
+}
+.footer{
+    width: 850px;
+    height: 50px;
+    border: none;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    color: rgb(255, 232, 158);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+/* ================================ Responsiveness ===================================== */
+               /* desktops */
+@media screen and (max-width: 1024px) {
+    .page {
+        width: calc( 100% - 30px);
+        max-width: 100%; }
+}
+
+         /* small screens */
+@media screen and (max-width: 768px) {
+    .page{
+      width: 100%;
+      display: block;
+      background-size: auto;
+      flex-direction: column;
+      -moz-flex-direction: column;
+      -webkit-flex-direction: column;
+      -o-flex-direction: column;
+      -ms-flex-direction: column;
+      justify-content: center;
+      -moz-justify-content: center;
+      -webkit-justify-content: center;
+      -o-justify-content: center;
+      -ms-justify-content: center;
+      }
+      .head,.banner,.about,.links,.footer{
+          width: 98%;
+      }
+      .head{
+          height: 35px;
+          padding-bottom: 15px;
+          display:flex; 
+          justify-content: center; 
+      }
+      .container{
+          padding-top: 8px;
+      }
+      .banner{
+          height: 100px;
+          border: none;
+          display:flex; 
+          justify-content: center; 
+      }
+      h2{
+          font-size: 30px;
+      }
+      .about p{
+        font-size: 15px;
+      }
+      .about{
+          height: 150px;
+          display:flex; 
+          justify-content: center; 
+      }
+      .links{
+          height: 180px;
+          display:block; 
+          justify-content: center; 
+      }
+     .button{
+        width: 96%;
+        display: block;
+        justify-content: center;
+        margin-bottom: 20px;
+     }
+     .footer{
+         height: auto;
+     }
+      
+
+
+ }

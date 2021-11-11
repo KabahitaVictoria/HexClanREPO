@@ -1,0 +1,156 @@
+input{
+    border: none;
+    border-bottom: 1px solid white;
+    width: 45%;
+    display: block;
+    padding: 6px 30px;
+    background: transparent;
+    font-size: 15px;
+    padding-left: 50px;
+}
+
+input:focus, input:hover{
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+input::after{
+    color: orange;
+}
+::placeholder{
+    color: orange;
+    font-size: 15px;
+}
+
+input[type=submit]{
+    background:orange;
+    color: rgb(17, 16, 16);
+    border: none;
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 15px;  
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+input[type=submit]:hover{
+    background: rgb(255, 136, 0);
+    color: white;
+}
+
+.container{
+    background: rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 20px;
+}
+
+form{
+    float: left;
+    height: 600px;
+    padding: 5px;
+    width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-left: 85px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.page{
+    box-shadow: 0px 4px 8px 0px black;
+    background-image: url(../img/Logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px 600px;
+    border: none;
+    border-radius: 20px;
+    width: 1000px;
+    margin: 0 auto;
+    height: 600px;
+    display: block;
+    justify-content: space-around;
+}
+
+body{
+    background: rgb(243, 212, 180);
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    display: block;
+    padding: 30px 30px;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(255, 183, 101);
+}
+a:active{
+    color: rgb(0, 0, 0);
+}
+h3{
+    line-height: 1.66;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color:orange;
+    font-size: 36px;
+    margin-bottom: 33px;
+    padding-top: 10px;
+    padding-left: 250px;
+}
+
+
+
+/* ================================== Responviveness ============================================== */
+     /* desktops */
+@media screen and (max-width: 1024px) {
+    .page {
+      width: calc( 100% - 30px);
+      max-width: 100%; }
+}
+      /* tablets and small pcs
+     @media screen and (min-width: 1024px) {
+    .page {
+      max-width: 1200px; 
+      min-width: 768px;
+      background-image: url(../img/Logo.jpg);
+      background-repeat: no-repeat;
+      background-size: auto;}
+      input{
+          width: 900px;
+      } */
+     
+
+      /* small screens*/
+  @media screen and (max-width: 768px) {
+      .page{
+        width: 100%;
+        background-image: url(../img/Logo.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        display: block;
+        flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -o-justify-content: center;
+        -ms-justify-content: center;
+      }
+      
+      form{
+        height: 400px;
+        width:60% ;
+        padding-bottom: 150px;  
+      }
+      input{
+          width: 600px;
+      }
+     
+  }
