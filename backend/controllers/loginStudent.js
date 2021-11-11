@@ -8,7 +8,7 @@ const SaveLogin = (req,res)=>{
         password: req.body.password
     })
     data.save()
-    .then(res.status(201).json({ data }))
+    .then(res.render('/backend/public/CELS/Home/home.html'))
     .catch((err)=>{
         res.json({msg:"oops something went wrong"}, err)
     })

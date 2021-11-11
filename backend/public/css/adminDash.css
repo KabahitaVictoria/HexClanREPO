@@ -1,19 +1,33 @@
+.body {
+    background-repeat: no-repeat;
+    background: url(../Images/codequeen.jpg);
+    /* background-size: cover; */
+    margin: 0 0 0 0;
+}
 
+.dark {
+    margin: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    min-height: 1080px;
+    /* background-size: cover; */
+}
 
 #admin{
-    background-color: rgba(220, 220, 220, 0.308);
+    background-color: rgba(220, 220, 220, 0.123);
     margin: 0 auto;
     width: 70%;
 }
 
 #admin:hover{
-    background-color: rgba(220, 220, 220, 0.582);
+    background-color: rgba(220, 220, 220, 0.24);
 }
 
 h1,h2{
     color: rgba(255, 166, 0, 0.897);
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 5px black;
 }
 
 #h1 {
@@ -39,12 +53,13 @@ input[type=submit]{
     text-align: center;
     background-color: rgba(220, 220, 220, 0.219);
     margin: 0 auto;
-    width: 40%;
+    width: 60%;
     padding-bottom: 5px;
+    height: 40%;
 }
 
 .upload:hover{
-    background-color: rgba(220, 220, 220, 0.527);
+    background-color: rgba(220, 220, 220, 0.116);
 }
 
 /* .dash{
@@ -58,6 +73,7 @@ input[type=submit]{
     border-radius: 5px;
     height: 20px;
     width: 50%;
+    color: blanchedalmond;
 }
 
 input::placeholder{
@@ -67,7 +83,7 @@ input::placeholder{
 }
 
 label, .successMessage{
-    color: rgba(0, 0, 0, 0.685);
+    color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -78,8 +94,8 @@ label, .successMessage{
 .sidenav {
     height: 100%;
     width: 0;
-    /* position: relative; */
-    /* z-index: 1; */
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: rgba(255, 166, 0, 0.521);
@@ -91,8 +107,9 @@ label, .successMessage{
 
 .sidenav a{
     padding: 8px;
+    padding-bottom: 50px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 25px;
     color: rgba(15, 15, 15, 0.788);
     font-weight: bolder;
     display: block;
@@ -107,7 +124,7 @@ label, .successMessage{
 .sidenav .closebtn {
     position: relative;
     top: 0;
-    left: 30px;
+    left: 120px;
     font-size: 20px;
     margin-left: 30px;
 }

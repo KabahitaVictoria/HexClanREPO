@@ -1,29 +1,31 @@
-#navbar{
-    background-color: orange;
+.body {
+    background-repeat: no-repeat;
+    background: url(../Images/codequeen.jpg);
+    /* background-size: cover; */
+    margin: 0 0 0 0;
 }
 
-.nav-link h1, h5{
-    color: black;
+.dark {
+    margin: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.897);
+    min-height: 1080px;
+    /* background-size: cover; */
 }
 
-.nav-link h5{
-    color: black;
-    justify-content: right;
-}
-
-.container{
+/* .container{
     background-image: url(./Images/backgroundimage.jpg);
     padding-top: 3%;
-}
+} */
 
-.flex-container {
+/* .flex-container {
     display: flex;
     background-color: gray;
     justify-content: center;
-    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
-}
+    /* align-items: stretch | flex-start | flex-end | center | baseline | baseline | baseline | start | end;
+} */
   
-  .flex-container > div {
+  /* .flex-container > div {
     background-color: #f1f1f1;
     margin: 10px;
     padding: 20px;
@@ -34,4 +36,90 @@
 .img-fluid{
     width: 60Px;
     height: 50px;
+}
+
+.text-justify, .text-justify:hover{
+    color: black;
+} */
+
+.card{
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.219);
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    height: 40%;
+    min-height: 200px;
+}
+
+h1,h2{
+    color: rgba(255, 166, 0, 0.897);
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 5px black;
+}
+
+#h1 {
+    font-size: 50px;
+}
+
+.Headingcard{
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.219);
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 166, 0, 0.521);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidenav a{
+    padding: 8px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(15, 15, 15, 0.788);
+    font-weight: bolder;
+    display: block;
+    transition: 0.3s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidenav a:hover{
+    color: rgba(48, 47, 47, 0.705);
+}
+
+.sidenav .closebtn {
+    position: relative;
+    top: 0;
+    left: 120px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#dash {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#body{
+    flex-grow: 2;
 }
