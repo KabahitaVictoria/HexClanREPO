@@ -1,0 +1,37 @@
+#navbar{
+    background-color: orange;
+}
+
+.nav-link h1, h5{
+    color: black;
+}
+
+.nav-link h5{
+    color: black;
+    justify-content: right;
+}
+
+.container{
+    background-image: url(./Images/backgroundimage.jpg);
+    padding-top: 3%;
+}
+
+.flex-container {
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+}
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.img-fluid{
+    width: 60Px;
+    height: 50px;
+}
