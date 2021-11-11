@@ -14,9 +14,6 @@ const SaveLogin = (req,res)=>{
     })
 }
 
-
-
-
 module.exports = {
     SaveLogin
 }
