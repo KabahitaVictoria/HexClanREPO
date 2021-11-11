@@ -93,9 +93,9 @@ li a:hover:not(.active) {
     padding-top: 1%;
     padding-bottom: 2%;
     position: absolute;
-    top: 17%;
+    top: 15%;
     left: 35%;
-    width: 40%;
+    width: 30%;
     height: 80%;
     background-color: black;
     opacity: 0.8;
